@@ -1,0 +1,22 @@
+/*navigation*/
+/*home section*/
+#home{
+
+}
+/*services*/
+#services{
+display:flex;
+    flex-direction: column;
+}
+#services .box{
+    
+}
+/*carousel*/
+#carousel{
+overflow: hidden;
+}
+/*contact us section*/
+#contactus{
+
+}
+
