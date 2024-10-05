@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*CSS variable*/
+:root{
+    --navbar-height:60px;
+}
+/*navbar*/
+#navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+    top:0px;
+    
+}
+
+/*logo and img*/
+#logo
+{
+    margin:1px 1px;
+}
+#logo img{
+    height:60px;
+    margin:3px 4px;
+    border-radius: 60%;
+}
+
+/*navbar && list*/
+
+#navbar ul{
+    display: flex;
+    font-family: "Kanit", sans-serif;
+
+}
+#navbar::before{
+    content:"";
+    background-color:  rgb(8, 8, 8);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+   opacity:0.8;
+}
+#navbar ul li{
+   
+    list-style: none;
+    font-size: 1.2rem;
+    
+
+}
+#navbar ul li a{
+    color: white;
+   display:block;
+   padding: 3px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: rgb(254, 253, 254);
+}
+/*Home*/
+#home{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    padding:3px 200px;
+    height:550px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content:"";
+    position:absolute; 
+    background:url('images/bg.png') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Amaranth", sans-serif;
+   
+    
+}
+#home p{
+    color: rgb(248, 248, 246);
+}
+/*utility cls*/
+.primary{
+    font-size: 2.8rem;
+    padding:15px;
+    font-family: "Amaranth", sans-serif;
+}
+.h-secondary{
+    font-size: 1.6rem;
+    padding:12px;
+    font-family: "Amaranth", sans-serif;
+}
+.btnn{
+    padding: 6px 20px;
+    border:2px solid black;
+    background-color: rgb(3, 3, 3);
+    color: rgb(248, 242, 242);
+    margin:17px ;
+    border-radius:10px;
+    font-size: 1rem;
+  cursor: pointer;  
+}
+.btnn:hover{
+   background-color: white;
+   color: black;
+    opacity:0.7;
+}
+.center{
+    text-align: center;
+}
+/*services container*/
+#services{
+    
+    display:flex;
+    
+}
+#services .box{
+border:2px solid black;
+padding: 34px;
+
+border-radius:23px;
+margin:5px 5px;
+background:rgba(212, 211, 211, 0.5);
+}
+#services .box img{
+    height:170px;
+    margin:auto;
+    display:block;
+    
+    
+}
+#services .box p{
+    font-family: "Barlow", sans-serif;
+}
+#services .box:hover
+{
+    opacity:0.9;
+}
+/*carousel*/
+.carousel-item {
+    border:2px solid black;
+    border-radius: 15px;
+    height: 270px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin:5px;
+    overflow: hidden;
+}
+.carousel-item img {
+    height: 100%; 
+    width: auto; 
+    object-fit: cover; 
+}
+#contact {
+    position: relative;
+}
+#contact::before {
+    border: 2px solid black;
+    border-radius: 15px;
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('./images/contactus.png') no-repeat center center/cover;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+#contact-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:30px;
+}
+#contact-box form{
+    width:40%;
+
+}
+#contact-box label{
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+}
+
+
+
+
+
